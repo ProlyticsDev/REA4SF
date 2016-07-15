@@ -1,0 +1,5 @@
+[MAVENSMATE CAUGHT ERROR]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\ghook\build\mm\out00-PYZ.pyz\mm.project", line 386, in clean
+  File "C:\Users\Administrator\Desktop\ghook\build\mm\out00-PYZ.pyz\shutil", line 303, in move
+WindowsError: [Error 32] The process cannot access the file because it is being used by another process: u'c:/repo\\REA4SF\\unpackaged\\objects\\mm.log'

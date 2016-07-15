@@ -1,0 +1,19 @@
+{
+    "username": "rea4sf@prolytics.com.au", 
+    "project_name": "REA4SF", 
+    "org_url": "", 
+    "namespace": "", 
+    "metadata_container": "1dc28000000n6OPAAY", 
+    "environment": "developer", 
+    "workspace": "c:/repo/", 
+    "id": "NN3ZDZBPDDN531TE4TXHC1KTNE1QZHYW", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "StaticResource", 
+        "CustomObject", 
+        "Profile"
+    ]
+}

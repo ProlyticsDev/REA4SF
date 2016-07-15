@@ -1,0 +1,157 @@
+{
+    "properties": [], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "Util", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 9, 
+                "line": 3
+            }, 
+            "type": null
+        }
+    ], 
+    "namespace": null, 
+    "name": "Util", 
+    "tableDeclaration": {
+        "type": "Util", 
+        "modifiers": [
+            "public", 
+            "with sharing"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 1
+        }, 
+        "name": "Util"
+    }, 
+    "key": "01p28000008iz5IAAQ", 
+    "variables": [
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 49, 
+                "line": 18
+            }, 
+            "name": "forEncoding"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 53, 
+                "line": 25
+            }, 
+            "name": "header"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 68, 
+                "line": 25
+            }, 
+            "name": "payload"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 84, 
+                "line": 25
+            }, 
+            "name": "secret"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 99, 
+                "line": 25
+            }, 
+            "name": "signature"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 16, 
+                "line": 34
+            }, 
+            "name": "signatureInput"
+        }
+    ], 
+    "id": "01p28000008iz5IAAQ", 
+    "methods": [
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "base64UrlEncode", 
+            "parameters": [
+                {
+                    "type": "String", 
+                    "name": "forEncoding"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 18
+            }, 
+            "returnType": "String", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "verifyJwtSignature", 
+            "parameters": [
+                {
+                    "type": "String", 
+                    "name": "header"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "payload"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "secret"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "signature"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 27, 
+                "line": 25
+            }, 
+            "returnType": "Boolean", 
+            "type": null
+        }
+    ]
+}

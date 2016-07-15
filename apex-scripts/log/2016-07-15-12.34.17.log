@@ -1,0 +1,71 @@
+Execute Anonymous
+
+================================
+
+string signatureInput = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJsZWFkcyI6W3siYWdlbmN5X2lkIjoiWFlaQUJDIiwiYWdlbnRfcmVjaXBpZW50cyI6WyJhZ2VudDFAYWdlbmN5LmNvbSIsImFnZW50MkBhZ2VuY3kuY29tIl0sInNlbnRfYXQiOiIyMDE2LTA1LTA1VDA2OjIwOjAzWiIsInJlYV9wcmltYXJ5X2tleSI6Ijk5ODg3NyIsInJlYV9saXN0aW5nX2lkIjoiMTIzNDU2NzgiLCJyZWFfcGFyZW50X2lkIjoiIiwiY29uc3VtZXJfbmFtZSI6IlRvbSBKb25lcyIsImVtYWlsIjoidG9tam9uZXMwMDFAaG90bWFpbC5jb20iLCJwaG9uZSI6IjAyOTE5MTMzNDQiLCJsaXN0aW5nX2FkZHJlc3MiOiI1MTEgQ2h1cmNoIFN0IFJpY2htb25kLCBWSUMgMzEyMSIsImNvbW1lbnRzIjoiSSBhbSBpbnRlcmVzdGVkIGluIHRoaXMgcHJvcGVydHkuIFBsZXNhZSBjYWxsIiwiYWJvdXRfbWUiOiJBYm91dCBtZSIsInByZWZlcnJlZF9jb250YWN0X21ldGhvZCI6IlBob25lIiwiZW5xdWlyeV9zb3VyY2UiOiJyZWFsZXN0YXRlLmNvbS5hdSJ9XX0';
+
+string ReaPublicKey = 'MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEApXkTf3JcGKUKpqem/TRl'
++ 'q5Pl1u8a/wxlqfMtj46IzQaat+IhT7lT8/+KNIJ5JLJP76PLKve2rKzSdY99P7ZZ'
++ '8G0+IEsguf1RKfZEJdpCFn9FXGAUg4Xcx48LUPZh2+1xYcGpOTZTLmOBavD/tS4j'
++ 'iII/kQxBgzG84siLIIfLTyCLTti/G3FKlO9X7Uat2gKeKSVF7+1m5v+UoPnUpnwc'
++ 'iQnLTKxguLXz5NWUc7ADz8aNGUJpYjGxXp8zJALzF/CtXEsgKZR4bRmy7YHLKdjq'
++ 'bLiUlfM8rsQrYRj0RNVIe8PE3vDQAUAZToDCJ3F8EIZBRRtHLEndKoajDEPBItRN'
++ 'zLnyvwtRQlKS/aYJxwsWdjW15L2xLeRnXZbI96TzBr/T9OCSzpNNg1bHSFDhDuvG'
++ '0aWCFCG4pq1Dd1g/bcT/zxGr+0+Y+Zy0K0zKjgTMkMX7jxUEgcjCoffwPBrwKGy9'
++ 'qfC58kOOLp9afIQ0n5DbH1RQsVrVgmbetxi+JBK75R1Wz+dA5y1zKN3tMQinr4BH'
++ 'CYsTeAorCuLxPqzh8jVHXq695YRVstnbfRfg/m0EfX/5wpmqas0etfEG5bztezqq'
++ 'JG6dRCQxafVc70IHlmMV3IR/ys98NTCPo4rTSna+zRGt8hlk36bM6ilBTtPJ8ZZm'
++ 'DwvN9VJLdA5jODyLc8pNKJcCAwEAAQ==';
+
+blob ReaPublicKeyBlob = blob.valueOf(ReaPublicKey);
+
+//system.debug(EncodingUtil.Base64Encode(Crypto.generateMac('HMACSHA256', blob.valueOf(signatureInput), ReaPublicKey)));
+//system.debug(EncodingUtil.Base64Encode(Crypto.sign('RSA-SHA256', blob.valueOf(signatureInput), EncodingUtil.ReaPublicKey)));
+system.debug(EncodingUtil.Base64Encode(crypto.signwithcertificate('RSA-SHA256', blob.valueOf(signatureInput), 'REA_Connector')));
+
+================================
+
+31.0 APEX_CODE,DEBUG;APEX_PROFILING,DEBUG;CALLOUT,INFO;DB,INFO;VALIDATION,INFO;WORKFLOW,INFO
+Execute Anonymous: string signatureInput = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJsZWFkcyI6W3siYWdlbmN5X2lkIjoiWFlaQUJDIiwiYWdlbnRfcmVjaXBpZW50cyI6WyJhZ2VudDFAYWdlbmN5LmNvbSIsImFnZW50MkBhZ2VuY3kuY29tIl0sInNlbnRfYXQiOiIyMDE2LTA1LTA1VDA2OjIwOjAzWiIsInJlYV9wcmltYXJ5X2tleSI6Ijk5ODg3NyIsInJlYV9saXN0aW5nX2lkIjoiMTIzNDU2NzgiLCJyZWFfcGFyZW50X2lkIjoiIiwiY29uc3VtZXJfbmFtZSI6IlRvbSBKb25lcyIsImVtYWlsIjoidG9tam9uZXMwMDFAaG90bWFpbC5jb20iLCJwaG9uZSI6IjAyOTE5MTMzNDQiLCJsaXN0aW5nX2FkZHJlc3MiOiI1MTEgQ2h1cmNoIFN0IFJpY2htb25kLCBWSUMgMzEyMSIsImNvbW1lbnRzIjoiSSBhbSBpbnRlcmVzdGVkIGluIHRoaXMgcHJvcGVydHkuIFBsZXNhZSBjYWxsIiwiYWJvdXRfbWUiOiJBYm91dCBtZSIsInByZWZlcnJlZF9jb250YWN0X21ldGhvZCI6IlBob25lIiwiZW5xdWlyeV9zb3VyY2UiOiJyZWFsZXN0YXRlLmNvbS5hdSJ9XX0';
+Execute Anonymous: 
+Execute Anonymous: string ReaPublicKey = 'MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEApXkTf3JcGKUKpqem/TRl'
+Execute Anonymous: + 'q5Pl1u8a/wxlqfMtj46IzQaat+IhT7lT8/+KNIJ5JLJP76PLKve2rKzSdY99P7ZZ'
+Execute Anonymous: + '8G0+IEsguf1RKfZEJdpCFn9FXGAUg4Xcx48LUPZh2+1xYcGpOTZTLmOBavD/tS4j'
+Execute Anonymous: + 'iII/kQxBgzG84siLIIfLTyCLTti/G3FKlO9X7Uat2gKeKSVF7+1m5v+UoPnUpnwc'
+Execute Anonymous: + 'iQnLTKxguLXz5NWUc7ADz8aNGUJpYjGxXp8zJALzF/CtXEsgKZR4bRmy7YHLKdjq'
+Execute Anonymous: + 'bLiUlfM8rsQrYRj0RNVIe8PE3vDQAUAZToDCJ3F8EIZBRRtHLEndKoajDEPBItRN'
+Execute Anonymous: + 'zLnyvwtRQlKS/aYJxwsWdjW15L2xLeRnXZbI96TzBr/T9OCSzpNNg1bHSFDhDuvG'
+Execute Anonymous: + '0aWCFCG4pq1Dd1g/bcT/zxGr+0+Y+Zy0K0zKjgTMkMX7jxUEgcjCoffwPBrwKGy9'
+Execute Anonymous: + 'qfC58kOOLp9afIQ0n5DbH1RQsVrVgmbetxi+JBK75R1Wz+dA5y1zKN3tMQinr4BH'
+Execute Anonymous: + 'CYsTeAorCuLxPqzh8jVHXq695YRVstnbfRfg/m0EfX/5wpmqas0etfEG5bztezqq'
+Execute Anonymous: + 'JG6dRCQxafVc70IHlmMV3IR/ys98NTCPo4rTSna+zRGt8hlk36bM6ilBTtPJ8ZZm'
+Execute Anonymous: + 'DwvN9VJLdA5jODyLc8pNKJcCAwEAAQ==';
+Execute Anonymous: 
+Execute Anonymous: blob ReaPublicKeyBlob = blob.valueOf(ReaPublicKey);
+Execute Anonymous: 
+Execute Anonymous: //system.debug(EncodingUtil.Base64Encode(Crypto.generateMac('HMACSHA256', blob.valueOf(signatureInput), ReaPublicKey)));
+Execute Anonymous: //system.debug(EncodingUtil.Base64Encode(Crypto.sign('RSA-SHA256', blob.valueOf(signatureInput), EncodingUtil.ReaPublicKey)));
+Execute Anonymous: system.debug(EncodingUtil.Base64Encode(crypto.signwithcertificate('RSA-SHA256', blob.valueOf(signatureInput), 'REA_Connector')));
+12:34:17.16 (16973625)|USER_INFO|[EXTERNAL]|00528000003Uzze|rea4sf@prolytics.com.au|Australian Eastern Standard Time|GMT+10:00
+12:34:17.16 (16995642)|EXECUTION_STARTED
+12:34:17.16 (17002779)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+12:34:17.16 (43125680)|USER_DEBUG|[20]|DEBUG|iUxb1PWudANt9iC1NTjLnaDgQYKlZCuTDRbzooRQ3EWwuPRv9Mj5viJOLcllZ3uF6/5zREQ+s4KW8D3CbyELbxWqu3NeOVsCf6e12VJn8V6MEw6/0tl7ikqpmi3YxF94UdKg5dWD7Q7fnEQ71udb3/w9fwSp7hgARfeM3D8tXx/VkqkNCXUeUIL8vV5NcGYBveiDbPBKtH+UEtfTE96RABAD9t3zmmmv4I/fapYcG1TZq4RwaMNulPXmV5RXvTzV3k5QWY+xvbBaYRSDnEnjiQawhWPrNx4kbUZ3PdjgFNjwS9Qdrl+aHAU3FyXECSYkPW1XiH7/EQD6y5HIRlkHhg==
+12:34:17.43 (43216975)|CUMULATIVE_LIMIT_USAGE
+12:34:17.43 (43216975)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:34:17.43 (43216975)|CUMULATIVE_LIMIT_USAGE_END
+
+12:34:17.16 (43296790)|CODE_UNIT_FINISHED|execute_anonymous_apex
+12:34:17.16 (46119984)|EXECUTION_FINISHED

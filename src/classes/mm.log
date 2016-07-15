@@ -1,0 +1,110 @@
+[MAVENSMATE CAUGHT ERROR]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\ghook\build\mm\out00-PYZ.pyz\mm.project", line 364, in clean
+WindowsError: [Error 32] The process cannot access the file because it is being used by another process: u'c:/repo/REA4SF\\src\\classes\\mm.log'
+[MAVENSMATE CAUGHT ERROR]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\ghook\build\mm\out00-PYZ.pyz\mm.project", line 364, in clean
+WindowsError: [Error 32] The process cannot access the file because it is being used by another process: u'c:/repo/REA4SF\\src\\classes\\mm.log'
+[MAVENSMATE CAUGHT ERROR]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\ghook\build\mm\out00-PYZ.pyz\mm.project", line 364, in clean
+WindowsError: [Error 32] The process cannot access the file because it is being used by another process: u'c:/repo\\REA4SF\\src\\classes\\mm.log'
+[MAVENSMATE CAUGHT ERROR]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\ghook\build\mm\out00-PYZ.pyz\mm.project", line 364, in clean
+WindowsError: [Error 32] The process cannot access the file because it is being used by another process: u'c:/repo\\REA4SF\\src\\classes\\mm.log'
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com
+Starting new HTTPS connection (1): ap2.salesforce.com

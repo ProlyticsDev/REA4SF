@@ -1,0 +1,9 @@
+<apex:component >
+
+    <apex:includeScript value="/canvas/sdk/js/publisher.js"/>
+    <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" />
+    <apex:includeScript value="{!URLFOR($Resource.TableSorter)}" />
+    <apex:includeScript value="{!URLFOR($Resource.DART, '/accorto-lightning-dart-59b97b3/lib/assets/scripts/ldart.js')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.SLDS100, 'assets/styles/salesforce-lightning-design-system-vf.css')}"/>
+    
+</apex:component>
